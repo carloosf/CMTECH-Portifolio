@@ -1,0 +1,204 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body,
+html {
+    background-color: #141414;
+    height: 100%;
+    width: 100%;
+}
+
+header{
+    height: 10%;
+    box-shadow: 1px 2px 5px 1px rgb(72, 70, 70);
+    margin-bottom: 30px;
+    background-color: #292222;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.logo{
+    position: relative;
+    right: 225px;
+    top: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.infos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    right: 8%;
+}
+.infos * {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    transition: color 2s
+}
+
+.info-links{
+    position: relative;
+    top: 5px;
+    margin-inline: 1%;
+    padding-inline: 10px;
+    padding-bottom: 5px;
+    transition: border-bottom 3s;
+}
+
+.info-links:hover{
+    border-bottom: 1px solid #8c9aea;
+}
+
+.infos *:hover{
+    color: #8c9aea;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    line-height: 1.4em;
+    background-color: #141414;
+}
+
+.card * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bg {
+    overflow: hidden;
+    min-height: 250px;
+    min-width: 100%;
+}
+
+.bg-maria {
+    background: url('/background/bg-maria.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-carlos {
+    background: url('/background/bg-carlos.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-vitor {
+    background: url('/background/bg-vitor.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-matheus {
+    background: url('/background/bg-matheus.jpg') center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card img {
+    max-width: 100%;
+    vertical-align: top;
+    opacity: 0.85;
+}
+
+.card figcaption {
+    width: 100%;
+    background-color: #292222;
+    padding: 25px;
+    position: relative;
+}
+
+.card figcaption:before {
+    position: absolute;
+    content: '';
+    bottom: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 55px 0 0 400px;
+    border-color: transparent transparent transparent #292222;
+}
+
+.card figcaption a {
+    padding: 5px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: inline-block;
+    opacity: 0.65;
+    width: 47%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card figcaption a:hover {
+    opacity: 12;
+}
+
+.card .profile {
+    border-radius: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 25px;
+    z-index: 1;
+    max-width: 90px;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.card .follow {
+    margin-right: 4%;
+    border-color: #8c9aea;
+    color: #8c9aea;
+}
+
+.card h2 {
+    margin: 0 0 5px;
+    font-weight: 300;
+}
+
+.card h2 span {
+    display: block;
+    font-size: 0.5em;
+    color: #8c9aea;
+}
+
+.card p {
+    margin: 0 0 10px;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+
+@media screen (m) {
+    
+}
